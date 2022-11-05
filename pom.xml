@@ -11,5 +11,33 @@
   <name>control-1</name>
   <description>Proyecto para la realización del control 1</description>
   <url>https://github.com/GRISE-UPM/PROF-2021-EX1</url>
+  
+  <properties>
+    <maven.compiler.source>19</maven.compiler.source>
+    <maven.compiler.target>19</maven.compiler.target>
+    <!-- Following project.-properties are reserved for Maven in will become elements in a future POM definition. -->
+    <!-- Don't start your own properties properties with project. -->
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding> 
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+  </properties>
+  
+  <dependencies>
+  	<dependency>
+        <groupId>org.junit.jupiter</groupId>
+        <artifactId>junit-jupiter-engine</artifactId>
+        <version>5.4.0</version>
+        <scope>test</scope>
+    </dependency>
+  </dependencies>
+  
+  <build>
+  	<plugins>
+  		<plugin>
+  			<groupId>org.apache.maven.plugins</groupId>
+    		<artifactId>maven-surefire-plugin</artifactId>
+    		<version>3.0.0-M7</version>
+  		</plugin>
+  	</plugins>
+  </build>
 
 </project>
