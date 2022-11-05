@@ -19,5 +19,10 @@ public class LibraryTest {
 		Library library = new Library();
 		assertThrows(EmptyLibraryException.class,()->library.getBook("Blancanieves"));
 	}
+	
+	@Test
+	public void test() {
+		fail("Esto tiene que fallar");
+	}
 
 }
