@@ -22,7 +22,7 @@ public class LibraryTest {
 	
 	@Test
 	public void test() {
-		fail("Esto tiene que falla");
+		fail("Esto tiene que fallar");
 	}
 
 }
